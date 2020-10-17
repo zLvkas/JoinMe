@@ -1,0 +1,37 @@
+database:
+  host: 'localhost'
+  port: 3306
+  databaseName: 'joinme'
+  databaseUser: 'joinme'
+  databasePassword: 'joinme123'
+
+Commands:
+  JoinMeCommand:
+    prefix: '§8┃ §6Join§fMe §8×'
+    unlimitedTokenPermission: 'joinme.unlimited'
+    noCoolDownPermission: 'joinme.cooldown'
+    coolDownInSeconds: 30
+    inCoolDown: '%PREFIX% §7Du kannst nur alle §630 Sekunden §7ein JoinMe erstellen!'
+    usage: '%PREFIX% §eVerwendung §8» §e/JoinMe §8<§eSpieler§8>'
+    noJoinMe: '%PREFIX% §7Der Spieler §e%TARGET% §7hat §ckein §7JoinMe oder das JoinMe ist §cabgelaufen§7!'
+    error: '%PREFIX% §7Ein §cFehler §7 ist aufgetreten!'
+    notEnoughTokens: '%PREFIX% §7Du hast derzeit §ckeine §6Tokens§7!'
+    connecting: '%PREFIX% §7Du wirst auf den Server von §e%PLAYER% §7weitergeleitet...'
+    alreadyConnected: '%PREFIX% §7Du bist bereits auf dem Server von §e%PLAYER%§7!'
+    broadCastMessage: '§8§m--------------- §8┃ §6J§foin§6M§fe §8┃ §8§m---------------%NEW%§r%NEW%§8» §5§l%PLAYER% §7spielt auf §6%SERVER%§7!%NEW%§8» §eKlicke§7, um zu ihm zu springen!%NEW%§r%NEW%§8§m--------------- §8┃ §6J§foin§6M§fe §8┃ §8§m---------------'
+    joinMeCreated: '%PREFIX% §7Dein JoinMe wurde §aerfolgreich §7erstellt und an §6%AMOUNT% §6Spieler §7geschickt!'
+
+  TokenCommand:
+    prefix: '§8┃ §6T§fokens §8×'
+    permission: 'joinme.tokens'
+    noPerm: '%TOKENPREFIX% §7Dazu hast du §ckeine §7Rechte!'
+    playerMessage: '%TOKENPREFIX% §7Du hast derzeit §6%TOKENS% Tokens§7!'
+    usage: '%TOKENPREFIX% §eVerwendung §8» §e/tokens §8<§eget §8× §eset §8× §eadd §8× §eremove§8> §8[§eAnzahl§8]'
+    targetNotFound: '%TOKENPREFIX% §7Der Spieler §e%TARGET% §7existiert §cnicht§7!'
+    targetTokens: '%TOKENPREFIX% §7Der Spieler §e%TARGET% §7hat §6%AMOUNT% §7Tokens!'
+    tokensSet: '%TOKENPREFIX% §7Du hast die Tokens von §e%TARGET% §7auf §6%AMOUNT% §7gesetzt!'
+    tokensAdded: '%TOKENPREFIX% §7Du hast §e%TARGET% §6%TOKENS% §7Tokens §ahinzugefügt§7!'
+    tokensRemoved: '%TOKENPREFIX% §7Du hast §e%TARGET% §6%TOKENS% §7Tokens §centfernt§7!'
+    notEnoughTokens: '%TOKENPREFIX% §e%TARGET% §7hat §cnicht §7genügend Tokens!'
+    notANumber: '%TOKENPREFIX% §e%NUMBER% §7ist §ckeine §7Zahl!'
+    notHigherThan0: '%TOKENPREFIX% §7Die Zahl darf §cnicht §7höher als §e0 §7sein!'
